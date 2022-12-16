@@ -18,6 +18,12 @@ To add a dependency, all you need to do is call this code below:
 void configureDependencies() => getIt.init();  
 ```
 
+To handle the generation file run this command on your terminal 
+```
+flutter pub run build_runner build --delete-conflicting-outputs
+```
+It will generates a new file 'injection.config.dart', which will include all dependencies for all use cases.
+
 and on your main func
 ```
 void main() {
